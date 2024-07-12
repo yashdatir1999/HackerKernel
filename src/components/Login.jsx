@@ -61,7 +61,7 @@ const Login = ({ setIsLoggedIn }) => {
         <h1 className='text-4xl mb-5'>Welcome Back!</h1>
          
         <h4 className='font-semibold'>Test E-mail: <span className='font-light	'>eve.holt@reqres.in</span></h4>
-        <h4 className='font-semibold	'>Test Password: <span className='font-light	'>tailwind</span></h4>
+        <h4 className='font-semibold	'>Test Password: <span className='font-light	'>pistol</span></h4>
         
       </div>
     </div>

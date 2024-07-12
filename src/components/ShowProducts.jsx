@@ -32,7 +32,7 @@ const ShowProducts = () => {
         />
         {
             (filterProducts.length === 0) ?
-            <p className='text-red-600 text-2xl font-mono'>No Product Found</p> :
+            <p className='text-red-600 text-2xl font-mono'>No Product Found!</p> :
             <>
             {filterProducts.map((product , idx)=>(
                 <ul key={idx} className='backdrop-blur-md shadow-md flex w-[80%] p-2 mb-2 justify-between'>
@@ -40,7 +40,7 @@ const ShowProducts = () => {
                     <li>{product.productName}</li>
                     </div>
                     <div className='w-[30%]'>
-                    <li className=''>{product.productPrice}</li>
+                    <li className=''>₹ {product.productPrice}</li>
                     </div>
                     <div className='w-[10%] mr-[-10%] flex items-end flex-col'>
                     <Link to={`/home/EditProduct/${idx}`}><FaRegEdit />
