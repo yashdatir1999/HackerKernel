@@ -16,4 +16,14 @@ Search: Users can search for products by name to quickly find specific items.
 React: Frontend framework for building user interfaces.
 React Router: Handling navigation and routing within the application.
 Context API: State management for global application data, such as products and user authentication.
-CSS (or CSS-in-JS libraries): Styling the components and UI elements.
+CSS (tailwind CSS): Styling the components and UI elements.
+
+## Installation
+Install dependencies:
+
+npm install -f
+
+Open http://localhost:3000 with your browser to see the result.
+
+## Deploy on Vercel
+https://hacker-kernel.vercel.app/
