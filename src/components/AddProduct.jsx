@@ -30,7 +30,7 @@ const AddProduct = () => {
 
       setProductName("")
       setProductPrice("")
-      window.location.reload();
+      
     }
   }
   return (
