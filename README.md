@@ -1,8 +1,19 @@
-# React + Vite
+# React Product Management System
+This project is a React-based web application that includes authentication with login functionality and CRUD operations (Create, Read, Update, Delete) for managing products. It provides a user-friendly interface to add, view, edit, and delete products.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+Authentication: Users can authenticate with a login mechanism to access the product management system.
 
-Currently, two official plugins are available:
+## Product Management:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Create: Add new products with details such as name, price, description, etc.
+Read: View a list of all products with their details.
+Update: Edit existing products to update their information.
+Delete: Remove products from the system.
+Search: Users can search for products by name to quickly find specific items.
+
+## Technologies Used
+React: Frontend framework for building user interfaces.
+React Router: Handling navigation and routing within the application.
+Context API: State management for global application data, such as products and user authentication.
+CSS (or CSS-in-JS libraries): Styling the components and UI elements.
