@@ -31,29 +31,38 @@ const Login = ({ setIsLoggedIn }) => {
     }
   }
   return (
-    <div className='w-screen h-screen flex justify-center items-center'>
-      <div className='w-96 h-96 border-2 rounded-lg shadow-lg border-slate-400 flex justify-center items-center'>
-
-        <form onSubmit={submitHandler} className='flex flex-col justify-center gap-5"'>
-          <h1 className="font-serif text-3xl ml-20 text-blue-500">Login</h1>
+    <div className='  flex justify-evenly items-center login-bg '>
+      <div className='w-[70%] h-screen  ml-[10%] rounded-lg  flex justify-center items-center'>
+        <div className='h-[60%] w-[60%] backdrop-blur-md form-bg p-5 rounded-md	'>
+        <form onSubmit={submitHandler} className='flex flex-col justify-center gap-5 bg-red-600"'>
+          <h1 className="font-mono text-3xl text-black-500 text-center	">LOGIN</h1>
           <input 
             type="email" 
             name="email" 
             placeholder='Enter E-mail' 
             value={email} onChange={(e) => setEmail(e.target.value)} 
-            className="border-2 border-slate-500 p-2 px-8 rounded mt-5"  
+            className="p-2 bg-transparent	border-black border-b-[1px] rounded-md outline-none input"  
           />
           <input 
             type="password" 
             name='password' 
             placeholder='password' 
             value={password} onChange={(e) => setPassword(e.target.value)} 
-            className="border-2 border-slate-500 p-2 px-8 rounded mt-3"  
+            className="p-2 bg-transparent	border-black border-b-[1px] rounded-md outline-none input"  
           />
           <button
-          className="border-2 p-3 px-16  mt-6 bg-blue-600 hover:scale-105 transition-all duration-300 hover:text-white rounded-2xl border-slate-500 font-semibold text-2xl"
+          className="border-none rounded-md mt-7 py-2 w-40 m-auto btn"
           >Login</button>
         </form>
+
+        </div>
+      </div>
+      <div className='w-[100%] h-screen  flex justify-center items-center flex-col	 '>
+        <h1 className='text-4xl mb-5'>Welcome Back!</h1>
+         
+        <h4 className='font-semibold'>Test E-mail: <span className='font-light	'>eve.holt@reqres.in</span></h4>
+        <h4 className='font-semibold	'>Test Password: <span className='font-light	'>tailwind</span></h4>
+        
       </div>
     </div>
   )

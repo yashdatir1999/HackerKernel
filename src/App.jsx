@@ -16,7 +16,6 @@ const App = () => {
 
   return (
     <>
-
       <Routes>
         <Route
           path='/'
@@ -47,6 +46,8 @@ const App = () => {
 
 
       </Routes>
+
+      
     </>
   )
 }
