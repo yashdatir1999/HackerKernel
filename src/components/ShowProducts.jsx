@@ -3,7 +3,9 @@ import { ProductContext } from '../utils/Context'
 import { Link } from 'react-router-dom'
 import { FaRegEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
+
 const ShowProducts = () => {
+    
     const [products, setProducts] = useContext(ProductContext)
     const [searchProduct, setsearchProduct] = useState("")
 

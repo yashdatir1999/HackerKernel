@@ -26,6 +26,7 @@ const AddProduct = () => {
       const product = { productName, productPrice }
       const copyProduct = [...products]
       copyProduct.push(product)
+      setProducts(copyProduct)
       localStorage.setItem("PRODUCTS", JSON.stringify(copyProduct))
 
       setProductName("")
