@@ -18,6 +18,7 @@ const Login = ({ setIsLoggedIn }) => {
       });
 
       const data = await response.json();
+      console.log(data)
       if (response.ok) {
         localStorage.setItem("isLoggedIn", true);
         localStorage.setItem("token", JSON.stringify(data.token));
@@ -53,6 +54,7 @@ const Login = ({ setIsLoggedIn }) => {
           <button
           className="border-none rounded-md mt-7 py-2 w-40 m-auto btn"
           >Login</button>
+          <p className='m-auto text-red-600 text-1xl'>{error}</p>
         </form>
 
         </div>
